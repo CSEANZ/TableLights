@@ -1,0 +1,17 @@
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\bin\Debug\ColourLibrary.dll
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\bin\Debug\ColourLibrary.pdb
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\bin\Debug\ColourLibrary.pri
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\ColourLibrary.csprojResolveAssemblyReference.cache
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\ColourLibrary.dll
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\ColourLibrary.pdb
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\priconfig.xml
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\priconfig.xml.intermediate
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\layout.resfiles
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\layout.resfiles.intermediate
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\resources.resfiles
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\resources.resfiles.intermediate
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\pri.resfiles
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\pri.resfiles.intermediate
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\qualifiers.txt
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\qualifiers.txt.intermediate
+C:\Users\acoat\source\repos\PrintLabel\ColourLibrary\ColourLibrary\obj\Debug\MultipleQualifiersPerDimensionFound.txt
