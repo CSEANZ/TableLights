@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Q42.HueApi.ColorConverters.Original;
 
 namespace ColourLibrary
 {
@@ -21,46 +22,37 @@ namespace ColourLibrary
 
     public static class HueColourExtensions
     {
-        public static double[] ToCTColour(this HueColour colour)
+        public static RGBColor ToRGBColour(this HueColour colour)
         {
-            double[] outColour = new double[2];
+            RGBColor outColour;
             switch (colour)
             {
                 case HueColour.Red:
-                    outColour[0] = 0.3972d;
-                    outColour[1] = 0.4564d;
+                    outColour = new RGBColor("FF0000");
                     break;
                 case HueColour.Orange:
-                    outColour[0] = 0.5425d;
-                    outColour[1] = 0.4196d;
+                    outColour = new RGBColor("FFA500");
                     break;
                 case HueColour.Yellow:
-                    outColour[0] = 0.5425d;
-                    outColour[1] = 0.4196d;
+                    outColour = new RGBColor("FFFF00");
                     break;
                 case HueColour.Green:
-                    outColour[0] = 0.41d;
-                    outColour[1] = 0.51721d;
+                    outColour = new RGBColor("00FF00");
                     break;
                 case HueColour.Blue:
-                    outColour[0] = 0.1691d;
-                    outColour[1] = 0.0441d;
+                    outColour = new RGBColor("0000FF");
                     break;
                 case HueColour.Indigo:
-                    outColour[0] = 0.3972d;
-                    outColour[1] = 0.4564d;
+                    outColour = new RGBColor("4B0082");
                     break;
                 case HueColour.Violet:
-                    outColour[0] = 0.3972d;
-                    outColour[1] = 0.4564d;
+                    outColour = new RGBColor("EE82EE");
                     break;
                 case HueColour.White:
-                    outColour[0] = 0.3972d;
-                    outColour[1] = 0.4564d;
+                    outColour = new RGBColor("FFFFFF");
                     break;
                 default:
-                    outColour[0] = 0.3972d;
-                    outColour[1] = 0.4564d;
+                    outColour = new RGBColor("FFFFFF");
                     break;
             }
 

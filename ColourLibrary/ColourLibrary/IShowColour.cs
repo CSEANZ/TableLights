@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ColourLibrary
 {
-    interface IShowColour
+    public interface IShowColour
     {
+        Task Initialize();
         Task SetDefault();
         Task TurnOn();
         Task TurnOn(int index);

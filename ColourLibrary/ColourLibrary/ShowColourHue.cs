@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Q42.HueApi.ColorConverters.OriginalWithModel;
 
 namespace ColourLibrary
 {
@@ -26,23 +27,8 @@ namespace ColourLibrary
 
         public ShowColourHue()
         {
-             LoadBridges();
         }
 
-        private async Task LoadBridges()
-        {
-            IBridgeLocator locator = new HttpBridgeLocator();
-            var bridgeIPs = await locator.LocateBridgesAsync(TimeSpan.FromSeconds(5));
-            bridge = bridgeIPs.FirstOrDefault();
-
-            // if there's one or more that comes back, register this app
-            if (Connected)
-            {
-                client = new LocalHueClient(bridge.IpAddress);
-                appKey = await client.RegisterAsync(APP_NAME, DEVICE_NAME);
-                client.Initialize(appKey);
-            }
-        }
 
         public int Count
         {
@@ -115,7 +101,7 @@ namespace ColourLibrary
         {
             var command = new LightCommand();
             command.On = true;
-            command.SetColor(colour.ToCTColour()[0], colour.ToCTColour()[1]);
+            command.SetColor(colour.ToRGBColour());
             return command;
         }
 
@@ -181,6 +167,21 @@ namespace ColourLibrary
         {
             var command = CreateTurnOnCommand(false);
             SendCommandAsync(command, indexes);
+        }
+
+        public async Task Initialize()
+        {
+            IBridgeLocator locator = new HttpBridgeLocator();
+            var bridgeIPs = await locator.LocateBridgesAsync(TimeSpan.FromSeconds(5));
+            bridge = bridgeIPs.FirstOrDefault();
+
+            // if there's one or more that comes back, register this app
+            if (Connected)
+            {
+                client = new LocalHueClient(bridge.IpAddress);
+                appKey = await client.RegisterAsync(APP_NAME, DEVICE_NAME);
+                client.Initialize(appKey);
+            }
         }
     }
 }
