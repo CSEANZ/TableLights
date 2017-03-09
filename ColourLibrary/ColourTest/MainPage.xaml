@@ -13,6 +13,7 @@
             <Button Content="All On" Click="OnButton_Click"/>
             <Button Content="All Off" Click="OffButton_Click"/>
             <Button Content="All Green" Click="GreenButton_Click"/>
+            <Button Content="All Cycle" Click="CycleButton_Click"/>
         </StackPanel>
 
     </Grid>

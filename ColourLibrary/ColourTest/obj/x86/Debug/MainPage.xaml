@@ -13,6 +13,7 @@
             <Button x:ConnectionId='2' Content="All On"                       />
             <Button x:ConnectionId='3' Content="All Off"                        />
             <Button x:ConnectionId='4' Content="All Green"                          />
+            <Button x:ConnectionId='5' Content="All Cycle"                          />
         </StackPanel>
 
     </Grid>

@@ -9,6 +9,9 @@ namespace ColourLibrary
     public interface IShowColour
     {
         Task Initialize();
+        Task Cycle();
+        Task Cycle(int index);
+        Task Cycle(List<int> indexes);
         Task SetDefault();
         Task TurnOn();
         Task TurnOn(int index);

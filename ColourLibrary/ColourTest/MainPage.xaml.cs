@@ -47,5 +47,9 @@ namespace ColourTest
         {
             await colourShower.ShowColour(HueColour.Green);
         }
+        private async void CycleButton_Click(object sender, RoutedEventArgs e)
+        {
+            await colourShower.Cycle();
+        }
     }
 }
