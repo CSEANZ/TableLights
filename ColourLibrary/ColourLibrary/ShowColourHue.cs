@@ -183,5 +183,28 @@ namespace ColourLibrary
                 client.Initialize(appKey);
             }
         }
+
+        private LightCommand CreatCycleCommand()
+        {
+            return new LightCommand() { Effect = Effect.ColorLoop };
+        }
+
+        public async Task Cycle()
+        {
+            var command = CreatCycleCommand();
+            SendCommandAsync(command);
+        }
+
+        public async Task Cycle(int index)
+        {
+            var command = CreatCycleCommand();
+            SendCommandAsync(command, index);
+        }
+
+        public async Task Cycle(List<int> indexes)
+        {
+            var command = CreatCycleCommand();
+            SendCommandAsync(command, indexes);
+        }
     }
 }
