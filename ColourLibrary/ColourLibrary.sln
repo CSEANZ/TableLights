@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourLibrary", "ColourLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourTest", "ColourTest\ColourTest.csproj", "{46658312-09EB-4F7E-856F-C84811FF48E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfaceDial", "..\SurfaceDial\SurfaceDial\SurfaceDial.csproj", "{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,28 @@ Global
 		{46658312-09EB-4F7E-856F-C84811FF48E6}.Release|x86.ActiveCfg = Release|x86
 		{46658312-09EB-4F7E-856F-C84811FF48E6}.Release|x86.Build.0 = Release|x86
 		{46658312-09EB-4F7E-856F-C84811FF48E6}.Release|x86.Deploy.0 = Release|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|Any CPU.Build.0 = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|Any CPU.Deploy.0 = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|ARM.Build.0 = Debug|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x64.ActiveCfg = Debug|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x64.Build.0 = Debug|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x64.Deploy.0 = Debug|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x86.ActiveCfg = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x86.Build.0 = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Debug|x86.Deploy.0 = Debug|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|Any CPU.ActiveCfg = Release|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|ARM.ActiveCfg = Release|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|ARM.Build.0 = Release|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|ARM.Deploy.0 = Release|ARM
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x64.ActiveCfg = Release|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x64.Build.0 = Release|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x64.Deploy.0 = Release|x64
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x86.ActiveCfg = Release|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x86.Build.0 = Release|x86
+		{FA70CD20-60E4-4F9E-8B78-6AB76879F36D}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

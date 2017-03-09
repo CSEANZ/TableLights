@@ -10,14 +10,14 @@ namespace ColourLibrary
 {
     public enum HueColour
     {
-        Red,
-        Orange,
-        Yellow,
-        Green,
-        Blue,
-        Indigo,
-        Violet,
-        White
+        Red = 0,
+        Orange = 1,
+        Yellow = 2,
+        Green = 3,
+        Blue = 4,
+        Indigo = 5,
+        Violet = 6,
+        White = 7
     }
 
     public static class HueColourExtensions
@@ -57,6 +57,18 @@ namespace ColourLibrary
             }
 
             return outColour;
+        }
+
+        public static HueColour ToHueColour(this int no)
+        {
+
+            int index = no % 7;
+            while (index < 0)
+            {
+                index += 7;
+            }
+
+            return (HueColour)index;
         }
     }
 }

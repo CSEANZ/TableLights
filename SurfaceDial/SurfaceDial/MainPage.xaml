@@ -7,7 +7,21 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Width="200" Height="200" Fill =" Red" x:Name="Rectangle" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Button Content="Off" Click="OffButton_Click" />
+            <Button Content="Initialize" Click="InitButton_Click" />
+        </StackPanel>
+        <Rectangle Grid.Column="1" Grid.Row="1" Width="200" Height="200" Fill =" Red" x:Name="Rectangle" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform x:Name="Scale" ScaleX="1"/>

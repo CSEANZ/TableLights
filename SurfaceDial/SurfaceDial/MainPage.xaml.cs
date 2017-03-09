@@ -6,6 +6,7 @@ using System.Reflection;
 using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Input;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
@@ -17,6 +18,8 @@ namespace SurfaceDial
 
     public sealed partial class MainPage : Page
     {
+        private IShowColour colourShower;
+
         public enum CurrentTool
         {
             Bright,
@@ -30,6 +33,9 @@ namespace SurfaceDial
         public MainPage()
         {
             this.InitializeComponent();
+
+            colourShower = new ShowColourHue();
+
             // Create a reference to the RadialController.
             var supported = RadialController.IsSupported();
             if (!supported)
@@ -71,19 +77,37 @@ namespace SurfaceDial
             {
                 case CurrentTool.Bright:
                     Rotate.Angle += args.RotationDeltaInDegrees;
+                    var brightness = ((int)(Rotate.Angle / 10)).ToHueBrightness();
+                    colourShower.SetBrightness(brightness);
                     break;
                 case CurrentTool.Color:
+
                     _selBrush += (int)(args.RotationDeltaInDegrees / 10);
-                    if (_selBrush >= _namedBrushes.Count)
-                        _selBrush = 0;
-                    if (_selBrush < 0)
-                        _selBrush = _namedBrushes.Count - 1;
-                    Rectangle.Fill = _namedBrushes[(int)_selBrush];
+                    //if (_selBrush >= _namedBrushes.Count)
+                    //    _selBrush = 0;
+                    //if (_selBrush < 0)
+                    //    _selBrush = _namedBrushes.Count - 1;
+
+                    var newColour = _selBrush.ToHueColour();
+                    var newRGBColor = newColour.ToRGBColour();
+                    Rectangle.Fill = new SolidColorBrush(new Color() { R = (byte)(newRGBColor.R*255), G = (byte)(newRGBColor.G*255), B = (byte)(newRGBColor.B*255) });
+
+                    colourShower.ShowColour(newColour);
                     break;
                 default:
                     break;
             }
 
+        }
+
+        private async void OffButton_Click(object sender, RoutedEventArgs e)
+        {
+            await colourShower.TurnOff();
+        }
+
+        private async void InitButton_Click(object sender, RoutedEventArgs e)
+        {
+            await colourShower.Initialize();
         }
 
     }

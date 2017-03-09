@@ -39,5 +39,16 @@
 
             return brightnessOut;
         }
+
+        public static HueBrightness ToHueBrightness(this int input)
+        {
+            var index = input % 5;
+            while (index < 0)
+            {
+                index += 5;
+            }
+
+            return (HueBrightness)index;
+        }
     }
 }
