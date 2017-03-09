@@ -1,2 +1,2 @@
-C:\Users\acoat\source\repos\TableLights\ColourLibrary\ColourLibrary\ColourLibrary.csproj;neutral
-C:\Users\acoat\source\repos\TableLights\ColourLibrary\ColourTest\ColourTest.csproj;x86
+C:\Users\danie\Source\Repos\TableLights\ColourLibrary\ColourLibrary\ColourLibrary.csproj;neutral
+C:\Users\danie\Source\Repos\TableLights\ColourLibrary\ColourTest\ColourTest.csproj;x86
